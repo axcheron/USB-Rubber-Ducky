@@ -1,3 +1,5 @@
+# Encoder
+
 This new version allows you to use alternative layout. It supports ASCII, ISO-8859-1 and unicode.
 
 $java -jar duckencode.jar -i script.txt -o inject.bin -l fr
