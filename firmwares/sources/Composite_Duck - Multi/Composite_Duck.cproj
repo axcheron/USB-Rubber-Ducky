@@ -2,8 +2,8 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectVersion>6.0</ProjectVersion>
-    <ToolchainName>com.Atmel.AVRGCC32</ToolchainName>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC32.C</ToolchainName>
     <ProjectGuid>{a2c2bf9a-34e4-4bb7-be2f-d8146eea2aad}</ProjectGuid>
     <avrdevice>AT32UC3B0256</avrdevice>
     <avrdeviceseries>uc3b</avrdeviceseries>
@@ -171,9 +171,19 @@
     <file path="src/asf/thirdparty/dlmalloc/dlmalloc.h" framework="" version="" source="thirdparty\dlmalloc\dlmalloc.h" changed="False" content-id="Atmel.ASF" />
     <file path="src/config/conf_dlmalloc.h" framework="" version="" source="thirdparty\dlmalloc\module_config\conf_dlmalloc.h" changed="False" content-id="Atmel.ASF" />
   </files>
-  <documentation help="http://asf.atmel.com/docs/3.5.0/common.services.usb.class.composite.device.example.hidkbd_msc.evk1101/html/index.html" />
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.28.1" />
+  </dependencies>
 </framework-data>
     </AsfFrameworkConfig>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <BootSegment>2</BootSegment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
@@ -230,6 +240,7 @@
       <Value>../src/asf/avr32/services/freq_detect</Value>
       <Value>../src/asf/avr32/services/fs/fat</Value>
       <Value>../src/asf/thirdparty/dlmalloc</Value>
+      <Value>%24(PackRepoDir)\atmel\UC3B_DFP\1.0.29\include\AT32UC3B0256</Value>
     </ListValues>
   </avr32gcc.compiler.directories.IncludePaths>
   <avr32gcc.compiler.optimization.level>Optimize for size (-Os)</avr32gcc.compiler.optimization.level>
@@ -241,7 +252,7 @@
   <avr32gcc.linker.general.DoNotUseStandardStartFiles>True</avr32gcc.linker.general.DoNotUseStandardStartFiles>
   <avr32gcc.linker.libraries.Libraries>
     <ListValues>
-      <Value>m</Value>
+      <Value>libm</Value>
     </ListValues>
   </avr32gcc.linker.libraries.Libraries>
   <avr32gcc.linker.optimization.GarbageCollectUnusedSections>True</avr32gcc.linker.optimization.GarbageCollectUnusedSections>
@@ -287,6 +298,7 @@
       <Value>../src/asf/avr32/services/freq_detect</Value>
       <Value>../src/asf/avr32/services/fs/fat</Value>
       <Value>../src/asf/thirdparty/dlmalloc</Value>
+      <Value>%24(PackRepoDir)\atmel\UC3B_DFP\1.0.29\include\AT32UC3B0256</Value>
     </ListValues>
   </avr32gcc.assembler.general.IncludePaths>
   <avr32gcc.preprocessingassembler.general.AssemblerFlags>-DACCESS_USB_ENABLED -DAT45DBX_ENABLE -DBOARD=EVK1101 -DUDD_ENABLE -mrelax -DSD_MMC_SPI_ENABLE -DACCESS_MEM_TO_RAM_ENABLED</avr32gcc.preprocessingassembler.general.AssemblerFlags>
@@ -328,6 +340,7 @@
       <Value>../src/asf/avr32/services/freq_detect</Value>
       <Value>../src/asf/avr32/services/fs/fat</Value>
       <Value>../src/asf/thirdparty/dlmalloc</Value>
+      <Value>%24(PackRepoDir)\atmel\UC3B_DFP\1.0.29\include\AT32UC3B0256</Value>
     </ListValues>
   </avr32gcc.preprocessingassembler.general.IncludePaths>
 </Avr32Gcc>
@@ -387,6 +400,7 @@
       <Value>../src/asf/avr32/services/freq_detect</Value>
       <Value>../src/asf/avr32/services/fs/fat</Value>
       <Value>../src/asf/thirdparty/dlmalloc</Value>
+      <Value>%24(PackRepoDir)\atmel\UC3B_DFP\1.0.29\include\AT32UC3B0256</Value>
     </ListValues>
   </avr32gcc.compiler.directories.IncludePaths>
   <avr32gcc.compiler.optimization.level>Optimize (-O1)</avr32gcc.compiler.optimization.level>
@@ -399,7 +413,7 @@
   <avr32gcc.linker.general.DoNotUseStandardStartFiles>True</avr32gcc.linker.general.DoNotUseStandardStartFiles>
   <avr32gcc.linker.libraries.Libraries>
     <ListValues>
-      <Value>m</Value>
+      <Value>libm</Value>
     </ListValues>
   </avr32gcc.linker.libraries.Libraries>
   <avr32gcc.linker.optimization.GarbageCollectUnusedSections>True</avr32gcc.linker.optimization.GarbageCollectUnusedSections>
@@ -445,6 +459,7 @@
       <Value>../src/asf/avr32/services/freq_detect</Value>
       <Value>../src/asf/avr32/services/fs/fat</Value>
       <Value>../src/asf/thirdparty/dlmalloc</Value>
+      <Value>%24(PackRepoDir)\atmel\UC3B_DFP\1.0.29\include\AT32UC3B0256</Value>
     </ListValues>
   </avr32gcc.assembler.general.IncludePaths>
   <avr32gcc.assembler.debugging.DebugLevel>Default (-g)</avr32gcc.assembler.debugging.DebugLevel>
@@ -487,6 +502,7 @@
       <Value>../src/asf/avr32/services/freq_detect</Value>
       <Value>../src/asf/avr32/services/fs/fat</Value>
       <Value>../src/asf/thirdparty/dlmalloc</Value>
+      <Value>%24(PackRepoDir)\atmel\UC3B_DFP\1.0.29\include\AT32UC3B0256</Value>
     </ListValues>
   </avr32gcc.preprocessingassembler.general.IncludePaths>
   <avr32gcc.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</avr32gcc.preprocessingassembler.debugging.DebugLevel>

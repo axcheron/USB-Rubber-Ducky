@@ -1,10 +1,10 @@
 //_____  M A I N ___________________________________________________________
 //
-// Module	: Ducky
+// Module		: Ducky
 // Description	: Simple USB HID Keyboard injection
-// Date		: Nov 28, 2012
+// Date			: Nov 28, 2012
 // Author       : Snake
-// Credit	: ATMEL, Jason Applebaum's keyscan method.
+// Credit		: ATMEL, Jason Applebaum's keyscan method.
 //__________________________________________________________________________
 
 //_____  I N C L U D E S ___________________________________________________
