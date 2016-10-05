@@ -12,7 +12,7 @@ $ java -jar duckencode.jar -i script.txt -o inject.bin -l fr
 $ java -jar duckencode.jar -i script.txt -o inject.bin -l resources/mylayout.properties
 ```
 
-## usage
+## Usage
 
 ```bash
 Hak5 Duck Encoder 2.6.3
