@@ -2,12 +2,19 @@
 
 This new version allows you to use alternative layout. It supports ASCII, ISO-8859-1 and unicode.
 
-$java -jar duckencode.jar -i script.txt -o inject.bin -l fr
-or
-$java -jar duckencode.jar -i script.txt -o inject.bin -l resources/mylayout.properties
+```bash
+$ java -jar duckencode.jar -i script.txt -o inject.bin -l fr
+```
 
-----------
+**or**
 
+```bash
+$ java -jar duckencode.jar -i script.txt -o inject.bin -l resources/mylayout.properties
+```
+
+## usage
+
+```bash
 Hak5 Duck Encoder 2.6.3
 
 usage: duckencode -i [file ..] encode specified file
@@ -33,6 +40,6 @@ Script Commands:
    REPEAT [Number] (Repeat last command N times)
    STRING [any character of your layout]
    [key name] (anything in the keyboard.properties)
+```
 
-Note:
-   Getting strange behaviour with GUI to open windows-menu, WINDOWS appears to work ok (but GUI maps to WINDOWS), strange?
+> **Note:** Getting strange behaviour with GUI to open windows-menu, WINDOWS appears to work ok (but GUI maps to WINDOWS), strange?
